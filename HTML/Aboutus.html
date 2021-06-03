@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About US</title>
+	<script type="text/javascript" src="../JS/jquery-3.3.1.min.js" ></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#abt").hide();
+				$(".text").click(function(){
+				$('#abt').slideDown(1000);
+			});
+		});
+	</script>
+	<style type="text/css">
+	body{
+	  margin: 0;
+	  padding: 0;
+	  background: #3E3E3E;
+	}
+	#navig{
+    width: 100%;
+    background-color: #202020;
+    float: right;
+    position: fixed;
+    z-index: 1;
+	}
+	.logo{
+	    float: left;
+	    background-color: #202020;
+	}
+	.navbar ul{
+	    float: right;
+	    padding:0;
+	    background-color: #202020;
+	}
+	.navbar ul {
+	    list-style-type: none;
+	    margin: 0px;
+	    padding: 0px;
+	    overflow: hidden;
+	    border: 1px;
+	    display: inline-block;
+	}
+	.navbar ul li {
+	    float: left;
+	    padding: 30px 20px ;
+	}
+
+	.navbar ul li a {
+	    text-decoration: none;
+	    color: #ECF0F1;
+	    font-family: none;
+	    font-weight: lighter;
+	    font-size: 20px;
+	}
+
+	a{
+	    text-decoration: none;
+	}
+	#abt p{
+		display: block;
+	}
+	.line::after{
+	    content: '';
+	    display: block;
+	    width: 0;
+	    height: 3px;
+	    background: #ECF0F1;
+	    transition: width .5s ease;
+	}
+	.line:hover::after{
+	    width: 100%;
+	    transition: width .5s ease;
+	}
+
+	#active::after{
+	    content: '';
+	    display: block;
+	    width: 100%;
+	    height: 3px;
+	    background: #ECF0F1;
+	    
+	}
+	.middle{
+	  position: absolute;
+	  top: 20%;
+	  transform: translateY(-50%);
+	  width: 100%;
+	  display: flex;
+	  justify-content: center;
+	}
+	.text{
+	  color: #ECF0F1;
+	  font-size: 50px;
+	  font-family: "montserrat";
+	  font-weight: 600;
+	  cursor: pointer;
+	}
+	.hidden{
+	  max-width: 0;
+	  opacity: 0;
+	  transition: 0.5s ease-in;
+	}
+	.text:hover .hidden{
+	  opacity: 1;
+	  max-width: 1em;
+	}
+	#abt{
+	  position: absolute;
+	  top: 60%;
+	  left: 18%;
+	  transform: translateY(-50%);
+	  color: #BDC0C1;
+	  width: 70%;
+	}
+	h3{
+		color: black;
+	}
+	footer{
+		background-color:#202020;
+		color:  #ECF0F1;
+		position: absolute;
+		top: 100%;
+		transform: translateY(-50%);
+		width: 100%;
+		font-size: 13px;
+	  	text-align: center;
+	}
+</style>
+</head>
+<body>
+	<header>
+	<nav id="navig">
+			<div class="logo">KMAP</div>
+			<div class="navbar">
+				<ul>
+					<li class="line"><a href="../home.html" >Home</a></li>
+					<li class="line"><a href="buy.html">Buy</a></li>
+					<li ><a href="Aboutus.html" id="active">About us</a></li>
+					<li class="line"><a href="login.html">Log in</a></li>
+					<li class="line"><a href="register.html">Register</a></li>
+				</ul>
+			</div>
+	</nav>
+	</header>
+	<div class="text middle">
+      <span>A</span>
+      <span class="hidden">B</span>
+      <span class="hidden">O</span>
+      <span class="hidden">U</span>
+      <span class="hidden">T</span>
+     <span class="hidden">-</span> 
+      <span>U</span>
+     <span class="hidden">S</span>
+    </div>
+	<div id="abt">
+		<p>
+			Here at KMAP, We’re working to redefine the Mobile industry with people in mind.
+		</p>
+		<p>
+			<h3>What we believe in</h3>
+			Helping people
+			KMAP is built on customer service. We empower our teams with the tools and knowledge to help customers, and then we get out of their way so they can do it.
+		</p>
+		<p>
+			<h3>Clarity and honesty</h3> 
+			Clarity and honesty
+			Too often, Mobile and Internet service providers rely on confusion to turn a profit. We don’t. We promote clarity and give people the info they need to make informed decisions.
+		</p>
+		<p>
+			<h3>A free and open Internet</h3>
+			A free and open Internet
+			We’re passionate advocates of the principles of net neutrality. We support a free and open Internet in word and deed. Ting will never block, throttle or otherwise interfere with the online access of our customers.
+		</p>
+	</div>
+	<footer>
+		<p>COPYRIGHT &copy; 2019 || ALL RIGHTS RESERVED </p>
+	</footer>
+	
+</body>
+</html>

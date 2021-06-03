@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home Page</title>
+	<link rel="stylesheet" type="text/css" href="../Style/style2.css">
+	<script type="text/javascript" src="../JS/jquery-3.3.1.min.js" ></script>
+	<script>
+		$(document).ready(function(){
+		  $(".hide").click(function(){
+		  	$('.desc').fadeOut();
+		    // $('.desc').hide();
+		  });
+		  $(".show").click(function(){
+		    // $(this).parent().siblings('.desc').show('slow')
+		    $(this).parent().siblings('.desc').fadeIn()
+		  });
+		});
+
+		$(document).ready(function(){
+			$('.comp').hide()
+		  $("#txt").click(function(){
+		    $(".comp").animate({
+     			height: 'toggle'
+    		});
+		    if($(this).hasClass('add'))
+		    	$(this).removeClass('add')
+		    else
+		    $(this).addClass('add')
+		  });
+
+		$('.shops').hide();
+		$('.buy').hover( function() {
+			$(this).find('.shops').fadeIn(300);
+		}, function() {
+			$(this).find('.shops').fadeOut(100);
+		});	
+		});
+
+
+
+</script>
+<style type="text/css">
+	
+	.add{
+		font-size: 20px;
+		font-weight: bold;
+	}
+	.desc{
+		position: fixed;
+		width: 1200px;
+		z-index: 1;
+		height: 50%;
+		top: 20%;
+		left: 10%;
+	}
+
+		#box{
+			padding: 110px 20px 10% 20px;
+			width: 70%;
+			border: 1px transparent;
+			margin-left: 200px;
+			border-radius: 15%;
+			background-color: #202020;
+			color: #BDC0C1;
+			height: 100%;
+		}
+		#box1{
+			float: left;
+			display: inline-block;
+			padding-left: 30px;
+			margin-right: 70%;
+			padding-top: 20px; 
+			width: 300px;
+		}
+		#box figure img{
+			float: left;
+			display: inline-block;
+			margin-bottom: 30px;
+			margin-top: 30px;
+		}
+
+		#box3{
+			float: right;
+			width: 45%;
+		}
+		#box3 h3{
+			margin-bottom: 20px;
+			border-bottom: 1px solid;
+		}
+		#box4{
+			width: 20%;
+			margin-left: 20px;
+		}
+		.buy{
+			position: absolute;
+		}
+		#company{
+			margin-bottom: 100%;
+		}
+</style>
+</head>
+<body>
+	<header>
+	<nav id="navig">
+			<div class="navbar">
+				<ul>
+					<li class="line"><a href="../home.html" >Home</a></li>
+					<li> <a href="" id="active">Buy</a></li>
+					<li class="line"><a href="Aboutus.html">About us</a></li>
+					<li class="line"><a href="login.html">Log in</a></li>
+					<li class="line"><a href="register.html">Register</a></li>
+				</ul>
+			</div>
+			<canvas id="Canvas1"  height="1" style="border:1px solid transparent ; width:100%;"style="padding-top: 10px;"></canvas>
+
+	</nav>
+	</header>
+	<!-- SLIDESHOW -->
+<div class="slideshow-container">
+
+	<div class="mySlides fade">
+	<div class="numbertext">1 / 3</div>
+	<img src="../Pictures/Covers/pic (1).jpg" style="width: 100%">
+		<div class="text">Caption One</div>
+	</div>
+
+	<div class="mySlides fade">
+		<div class="numbertext">2 / 3</div>
+		<img src="../Pictures/Covers/pic (2).jpg" style="width:100%">
+		<div class="text">Caption Two</div>
+	</div>
+
+	<div class="mySlides fade">
+		<div class="numbertext">3 / 3</div>
+		<img src="../Pictures/Covers/pic (4).jpg" style="width:100%">
+		<div class="text">Caption Three</div>
+	</div>
+
+	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+	<span class="dot" onclick="currentSlide(1)"></span> 
+	<span class="dot" onclick="currentSlide(2)"></span> 
+	<span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+<!-- ASIDE NAVIG -->
+	<aside id="company">
+		<section>
+			<input type="button" name="" value="Manufacturer" id="txt">
+			<section id="side">
+			<p class="comp" id="active2"><a href="buy.html">All</a></p>
+			<p class="comp"><a href="buysm.html">Samsung</a></p>
+			<p class="comp"><a href="buyip.html">Apple</a></p>
+			</section> 
+		</section>
+	</aside>	
+	
+
+ <!-- FOR PHONES -->
+
+<!-- FOR S9 -->
+<section class="container">
+	<center><h4>Samsung S9</h4></center>
+  	<img src="../Pictures/phones/s9.png" alt="Avatar" class="image"><center><input type="submit" name="" value="Buy" class="show"></center>
+  	<div class="text">
+    <div class="text" ><h3>Price: 87,900</h3></div>
+  	</div>
+  	<div class="desc" style="display: none;">
+	<section id="box">
+		<input type="button" name="" value="X" class="hide" style="float: right;">
+		<div id="box1"><p>Samsung - S9</p>	<p>Model : 64GB - Coral Blue</p>
+			<div style="padding-top: 20px;" class="buy" >Best buy at: 
+				<ul>
+					<li class="shops">Hamro bazar >Price : Rs.87,900.00</li>
+					<li class="shops">Kalimati naya pasal >Price : Rs.89,900.00</li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="box3">
+			<h3>Product Description</h3> 
+			<article>
+				<p>
+                ntroducing the Samsung Galaxy S9 - The Camera. Reimagined. Our category-defining Dual Aperture lens adapts like the human eye. It's able to automatically switch between various lighting conditions with ease?making your photos look great whether it's bright or dark, day or night. If it's dark, the lens opens to F1.5 mode to pull in light for a bright and clear photo and in the daylight, the lens shifts to F2.4 mode to help your picture come out sharp. Super Slow-mo lets you see the things you could have missed in the blink of an eye. Set the video to music or turn it into a looping GIF, and share it with a tap. Then sit back and watch the reactions roll in. Create an Augmented Reality version of yourself simply by taking a selfie. Then share your real-life feelings as emoji stickers and videos. Intelligent Scan is a new technology that combines face recognition and iris scan to make unlocking simple even in low light.
+                <ul>
+                	<li>Manufacturer: Samsung</li>
+					<li>Display: 5.8 in - Quad HD+ Super AMOLED - 2960x1440 screen resolution</li>
+					<li>Dimensions: 5.81 in (147.7 mm) x 2.70 in (68.7 mm) x 0.33 in (8.5 mm)</li>
+					<li>Product Details: 64 GB, 128 GB x microSDXC - up to 400 GB x 2.9 GHz Octa-core Exynos 9810/2.8 GHz Octa-core Snapdragon 845</li>
+					<li>Network: GSM/CDMA Unlocked</li>
+					<li>Bluetooth: 5.0</li>
+					<li>Video Recording: 4K @60fps</li>
+					<li>Ram: 4 GB</li>
+                </ul>
+				</p>
+
+			</article>
+	
+		</div>
+
+	</section>
+</div>
+
+</section>
+
+<!-- FOR S 8 -->
+<section class="container">
+	<center><h4>Samsung S8</h4></center>
+  	<img src="../Pictures/phones/s8.png" alt="Avatar" class="image"><center><input type="submit" name="" value="Buy" class="show"></center>
+  	<div class="text">
+    <div class="text" ><h3>Price: 69,900</h3></div>
+  	</div>
+  	<div class="desc" style="display: none;">
+	<section id="box">
+		<input type="button" name="" value="X" class="hide" style="float: right;">
+		<div id="box1"><p>Samsung - S8</p>	<p>Model : 64GB - Midnight Black</p>
+			<div style="padding-top: 20px;" class="buy" >Best buy at: 
+				<ul>
+					<li class="shops">Daraz >Price : Rs.69,900.00</li>
+					<li class="shops">Phone shop lalitpur >Price : Rs.69,950.00</li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="box3">
+			<h3>Product Description</h3> 
+			<article>
+				<p>
+               Samsung Galaxy S8 smartphone was launched in March 2017. The phone comes with a 5.86-inch touchscreen display with a resolution of 1440 pixels by 2960 pixels at a PPI of 570 pixels per inch.
+
+				The Samsung Galaxy S8 is powered by octa-core (4x2.35GHz + 4x1.9GHz) processor and it comes with 4GB of RAM. The phone packs 64GB of internal storage that can be expanded up to 256GB via a microSD card. As far as the cameras are concerned, the Samsung Galaxy S8 packs a 12-megapixel (f/1.7, 1.4-micron) primary camera on the rear and a 8-megapixel front shooter for selfies.
+
+				The Samsung Galaxy S8 is powered by a 3000mAh non removable battery. It measures 148.90 x 68.10 x 8.00 (height x width x thickness) and weighs 155.00 grams.
+
+				The Samsung Galaxy S8 is a single SIM (GSM) smartphone. Connectivity options include Wi-Fi, GPS, Bluetooth, NFC, USB Type-C, 3G and 4G. Sensors on the phone include Fingerprint sensor, Compass/ Magnetometer, Proximity sensor, Accelerometer, Ambient light sensor, Gyroscope and Barometer.
+
+                <ul>
+                	<li>Manufacturer: Samsung</li>
+					<li>Display: 5.8in - Quad HD+ Super AMOLED - 2960x1440 screen resolution</li>
+					<li>Dimensions: 5.86 in (148.9 mm) x 2.68 in (68.1 mm) x 0.31 in (8.0 mm)</li>
+					<li>Product Details: 64 GB, Octa-core (2.3GHz Quad + 1.7GHz Quad), 64 bit, 10nm processor/Octa-core (2.35GHz Quad + 1.9GHz Quad), 64 bit, 10nm processor</li>
+					<li>Network: GSM/CDMA Unlocked</li>
+					<li>Bluetooth: v 5.0 (LE up to 2Mbps)</li>
+					<li>Video Recording: 4K @ 30fps</li>
+					<li>Ram: 4 GB</li>
+                </ul>
+				</p>
+
+			</article>
+	
+		</div>
+
+	</section>
+</div>
+
+</section>
+
+<!-- FOR X -->
+<section class="container">
+	<center><h4>Iphone X</h4></center>
+  	<img src="../Pictures/phones/iphonex.png" alt="Avatar" class="image"><center><input type="submit" name="" value="Buy" class="show"></center>
+  	<div class="text">
+    <div class="text" ><h3>Price: 146,000</h3></div>
+  	</div>
+  	<div class="desc" style="display: none;">
+	<section id="box">
+		<input type="button" name="" value="X" class="hide" style="float: right;">
+		<div id="box1"><p>Apple - Iphone X</p>	<p>Model : 64GB - Space Gray</p>
+			<div style="padding-top: 20px;" class="buy" >Best buy at: 
+				<ul>
+					<li class="shops">Hamro bazar >Price : Rs.146,000.00</li>
+					<li class="shops">New phone shop >Price : Rs.148,000.00</li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="box3">
+			<h3>Product Description</h3> 
+			<article>
+				<p>
+                Our vision has always been to create an iPhone that is entirely screen. One so immersive the device itself disappears into the experience. And so intelligent it can respond to a tap, your voice, and even a glance. With iPhone X, that vision is now a reality. Say hello to the future.
+                <ul>
+                	<li>Manufacturer: Apple</li>
+                	<li>Display: 5.8 in - 458 ppi - 2436x1125 screen resolution</li>
+                	<li>Dimensions: 5.65 in (143.6 mm) x 2.79 in (70.9 mm) x 0.30 in (7.7 mm)</li>
+                	<li>Network: GSM/CDMA Unlocked</li>
+                	<li>Camera: 12 megapixels Dual</li>
+                	<li>Processor: Apple A11 Bionic</li>
+                	<li>Ram: 3 GB</li>
+                </ul>
+				</p>
+
+			</article>
+	
+		</div>
+
+	</section>
+</div>
+
+</section>
+
+<!-- FOR XR -->
+<section class="container">
+	<center><h4>Iphone XR</h4></center>
+  	<img src="../Pictures/phones/iphonexr.png" alt="Avatar" class="image"><center><input type="submit" name="" value="Buy" class="show"></center>
+  	<div class="text">
+    <div class="text" ><h3>Price: 119,500</h3></div>
+  	</div>
+  	<div class="desc" style="display: none;">
+	<section id="box">
+		<input type="button" name="" value="X" class="hide" style="float: right;">
+		<div id="box1"><p>Apple - Iphone XR</p>	<p>Model : 64GB - Space Gray</p>
+			<div style="padding-top: 20px;" class="buy" >Best buy at: 
+				<ul>
+					<li class="shops">New pasal Nepal >Price : Rs.119,500</li>
+					<li class="shops">Mero phone shop >Price : R Rs.120,000</li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="box3">
+			<h3>Product Description</h3> 
+			<article>
+				<p>
+               Liquid Retina - Introducing the most advanced LCD in the industry. All-new Liquid Retina. Innovative engineering allows to stretch the display into the corners. The result is an all-screen design - our largest LCD ever in an iPhone - that still fits comfortably in your hand.. Resists water and dust.The most durable front glass in a smartphon helps create an enclosure that's water resistant up to 1 meter for 30 minutes. iPhone Xr even resists spills from Coffee, Tea, Soda, and more.
+                <ul>
+                	<li>Manufacturer: Apple</li>
+                	<li>Display: 6.1 in - 326 ppi - 1792x828 screen resolution</li>
+                	<li>Dimensions: 5.94 in (150.9 mm) x 2.98 in (75.7 mm) x 0.33 in (8.3 mm)</li>
+                	<li>Network: GSM/CDMA Unlocked</li>
+                	<li>Camera: 12 megapixels Dual</li>
+                	<li>Processor: Apple A12 Bionic</li>
+                	<li>Ram: 3 GB</li>
+                </ul>
+				</p>
+
+			</article>
+	
+		</div>
+
+	</section>
+</div>
+
+</section>
+
+<!-- FOR S8 PLUS -->
+<section class="container">
+	<center><h4>Samsung S8 plus</h4></center>
+  	<img src="../Pictures/phones/s8pluspng.png" alt="Avatar" class="image"><center><input type="submit" name="" value="Buy" class="show"></center>
+  	<div class="text">
+    <div class="text" ><h3>Price: 79,900</h3></div>
+  	</div>
+  	<div class="desc" style="display: none;">
+	<section id="box">
+		<input type="button" name="" value="X" class="hide" style="float: right;">
+		<div id="box1"><p>Samsung - S8 plus</p>	<p>Model : 32GB - Arctic Silver</p>
+			<div style="padding-top: 20px;" class="buy" >Best buy at: 
+				<ul>
+					<li class="shops">Hamro bazar >Price : Rs.79,900.00</li>
+					<li class="shops">Daraz >Price : Rs.80,000.00</li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="box3">
+			<h3>Product Description</h3> 
+			<article>
+				<p>
+                Meet the Galaxy S8+ - Infinitely Brilliant. The Galaxy S8+ has the world's first Infinity Screen, A screen without limits. The expansive display stretches from edge to edge, giving you the most amount of screen in the least amount of space. The revolutionary design of the Galaxy S8+ begins from the inside out. We rethought every part of the phone's layout to break through the confines of the smartphone screen. So all you see is pure content and no bezel. It's the biggest, most immersive screen on a Galaxy smartphone of this size. And it's easy to hold in one hand. The Infinity Display has an incredible end-to-end screen that spills over the phone's sides, forming a completely smooth, continuous surface with no bumps or angles. It's pure, pristine, uninterrupted glass. And it takes up the entire front of the phone, flowing seamlessly into the aluminum shell. The result is a beautifully curved, perfectly symmetrical, singular object. Capture life as it happens with the Galaxy S8+ cameras. The 12MP rear camera and the 8MP front camera are so accurate and fast that you won't miss a moment, day or night. Prying eyes are not a problem when you have iris scanning on the Galaxy S8+. No two irises have the same pattern, not even yours, and they're nearly impossible to replicate. That means with iris scanning, your phone and its contents open to your eyes only. And when you need to unlock really fast, face recognition is a handy option. You never really stop using your phone. That's why Galaxy S8+ is driven by the world's first 10nm processor. It's fast and powerful and increases battery efficiency. Plus, there's the ability to expand storage, and to work through rain and dust with IP68-rated performance.
+                <ul>
+                	<li>Manufacturer: Samsung</li>
+					<li>Display: 6.2 in - Super AMOLED - 2960x1440 screen resolution</li>
+					<li>Dimensions: 6.28 in (159.5 mm) x 2.89 in (73.4 mm) x 0.32 in (8.1 mm)</li>
+					<li>Product Details: 64 GB, 128 GB x microSDXC - up to 256 GB x 2.3 GHz Octa-core Exynos 8895; 2.35 GHz Octa-core Snapdragon 835</li>
+					<li>Network: GSM/CDMA Unlocked</li>
+					<li>Bluetooth: 5.0</li>
+					<li>Video Recording: 4K @30fps</li>
+					<li>Ram: 4 GB</li>
+                </ul>
+				</p>
+
+			</article>
+	
+		</div>
+
+	</section>
+</div>
+
+</section>
+
+</section>
+<!-- FOR NOTE 8 -->
+<section class="container">
+	<center><h4>Samsung note 8</h4></center>
+  	<img src="../Pictures/phones/note8.png" alt="Avatar" class="image"><center><input type="submit" name="" value="Buy" class="show"></center>
+  	<div class="text">
+    <div class="text" ><h3>Price: 74,996</h3></div>
+  	</div>
+  	<div class="desc" style="display: none;">
+	<section id="box">
+		<input type="button" name="" value="X" class="hide" style="float: right;">
+		<div id="box1"><p>Samsung - Note 8</p>	<p>Model : 64GB - Deep Sea Blue</p>
+			<div style="padding-top: 20px;" class="buy" >Best buy at: 
+				<ul>
+					<li class="shops">Hamro bazar >Price : Rs.74,996.00</li>
+					<li class="shops">New phone shop >Price : Rs.75,999.00</li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="box3">
+			<h3>Product Description</h3> 
+			<article>
+				<p>
+                Do Bigger Things - See the bigger picture and communicate in a whole new way. With the Galaxy Note8 in your hand, bigger things are just waiting to happen. More screen means more space to do great things. Go big with the Galaxy Note8's 6.3" screen. It's the largest ever screen on a Note device and it still fits easily in your hand. Use the S Pen to express yourself in ways that make a difference. Draw your own emojis to show how you feel or write a message on a photo and send it as a handwritten note. Do things that matter with the S Pen. Get crisp photos even when it's dark and it's difficult to keep your phone steady. The Galaxy Note8's dual camera has a wide-angle camera that comes with the great low-light capabilities that you've come to expect from Galaxy phones, while the telephoto camera gives you 2x optical zoom for you to capture the near and far. Both have optical image stabilization so you get steady shots even when zoomed in.
+                <ul>
+                	<li>Manufacturer: Samsung</li>
+					<li>Display: 6.3 in - Super AMOLED - 2960x1440 screen resolution</li>
+					<li>Dimensions: 6.40 in (162.5 mm) x 2.94 in (74.8 mm) x 0.34 in (8.6 mm)</li>
+					<li>Product Details: 64 GB, 128 GB x microSDXC - up to 256 GB x 2.3 GHz Octa-core Exynos 8895; 2.35 GHz Octa-core Snapdragon 835</li>
+					<li>Network: GSM/CDMA Unlocked</li>
+					<li>Bluetooth: 5.0</li>
+					<li>Video Recording: 4K @30fps</li>
+					<li>Ram: 6 GB</li>
+                </ul>
+				</p>
+
+			</article>
+	
+		</div>
+
+	</section>
+</div>
+
+</section>
+
+
+<!-- FOR 8 PLUS -->
+<section class="container">
+	<center><h4>Iphone 8 Plus</h4></center>
+  	<img src="../Pictures/phones/iphone8plus.png" alt="Avatar" class="image"><center><input type="submit" name="" value="Buy" class="show"></center>
+  	<div class="text">
+    <div class="text" ><h3>Price: 112,500</h3></div>
+  	</div>
+  	<div class="desc" style="display: none;">
+	<section id="box">
+		<input type="button" name="" value="X" class="hide" style="float: right;">
+		<div id="box1"><p>Apple - Iphone 8 plus</p>	<p>Model : 64GB - Space Gray</p>
+			<div style="padding-top: 20px;" class="buy" >Best buy at: 
+				<ul>
+					<li class="shops">Daraz >Price : Rs.112,500.00</li>
+					<li class="shops">Phone shop lalitpur >Price : Rs.119,500.00</li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- <figure><img src="../Pictures/Phones/iphonex.png"></figure> -->
+		<div id="box3">
+			<h3>Product Description</h3> 
+			<article>
+				<p>
+                iPhone 8 Plus introduces an all_new glass design. The world's most popular camera, now even better. The smartest, most powerful chip ever in a smartphone. Wireless charging that?s truly effortless. And augmented reality experiences never before possible. iPhone 8 Plus. A new generation of iPhone.
+                <ul>
+                	<li>Manufacturer: Apple</li>
+                	<li>Display: 5.5 in - 401 ppi - 1920x1080 screen resolution</li>
+                	<li>Dimensions: 6.23 in (158.4 mm) x 3.07 in (78.1 mm) x 0.30 in (7.5 mm)</li>
+                	<li>Network: GSM/CDMA Unlocked</li>
+                	<li>Camera: 12 megapixels Dual</li>
+                	<li>Processor: Apple A11 Bionic</li>
+                	<li>Ram: 3 GB</li>
+                </ul>
+				</p>
+
+			</article>
+	
+		</div>
+
+	</section>
+</div>
+
+</section>
+
+<!-- FOR XS MAX -->
+<section class="container">
+	<center><h4>Iphone Xs Max</h4></center>
+  	<img src="../Pictures/phones/iphonexsmax.png" alt="Avatar" class="image"><center><input type="submit" name="" value="Buy" class="show"></center>
+  	<div class="text">
+    <div class="text" ><h3>Price: 115,900</h3></div>
+  	</div>
+  	<div class="desc" style="display: none;">
+	<section id="box">
+		<input type="button" name="" value="X" class="hide" style="float: right;">
+		<div id="box1"><p>Apple - Iphone Xs Max</p>	<p>Model : 64GB - Space Gray</p>
+			<div style="padding-top: 20px;" class="buy" >Best buy at: 
+				<ul>
+					<li class="shops">Hamro bazar >Price : Rs.115,900.00</li>
+					<li class="shops">Kalimati naya pasal >Price : Rs.116,900.00</li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="box3">
+			<h3>Product Description</h3> 
+			<article>
+				<p>
+                Super Retina. In Big and Bigger. An all-screen design gives you a large, beautiful canvas for everything you love to do. And iPhone Xs Max makes it massive, with a screen that measure 6.5 inches - our largest display ever on an iPhone. Custom-built OLED. The OLED panels in iPhone Xs Max allow for an HDR display with the industry's best color accuracy and remarkable brightness and contrast. They're the sharpest displays, with the highest pixel density, on any Apple device. A new level of water resistance. The A12 Bionic, with our next-generation Neural Engine, delivers incredible performance. It uses real-time machine learning to transform the way you experience photos, gaming, augmented reality, and more. Sensors, processors, algorithms, and you. An innovative dual-camera system integrates the ISP, the Neural Engine, and advanced algorithms to unlock new creative possibilities and help you capture incredible photos. Together with the Apple-designed ISP, it works like the world's fastest photographer's assistant to help turn your pictures into showstoppers. Security made simple. Face ID reinvente the way we unlock, log in, and pay. Some of our most sophisticated technologies - the TrueDepth camera system,and the Neural Engine - make it the most secure facial authentication ever in a smartphone. And even faster and easier to use.
+                <ul>
+                	<li>Manufacturer: Apple</li>
+                	<li>Display: 6.5 in - 458 ppi - 2688x1242 screen resolution</li>
+                	<li>Dimensions: 6.20 in (157.5 mm) x 3.04 in (77.4 mm) x 0.30 in (7.7 mm)</li>
+                	<li>Network: GSM/CDMA Unlocked</li>Dimensions: 6.20 in (157.5 mm) x 3.04 in (77.4 mm) x 0.30 in (7.7 mm)
+                	<li>Camera: 12 megapixels Dual</li>
+                	<li>Processor: Apple A12 Bionic</li>
+                	<li>Ram: 4 GB</li>
+                </ul>
+				</p>
+
+			</article>
+	
+		</div>
+
+	</section>
+</div>
+
+</section>
+
+<!-- NOTE 9 -->
+<section class="container">
+	<center><h4>Samsung Note 9</h4></center>
+  	<img src="../Pictures/phones/note9.png" alt="Avatar" class="image"><center><input type="submit" name="" value="Buy" class="show"></center>
+  	<div class="text">
+    <div class="text" ><h3>Price: 109,900</h3></div>
+  	</div>
+  	<div class="desc" style="display: none;">
+	<section id="box">
+		<input type="button" name="" value="X" class="hide" style="float: right;">
+		<div id="box1"><p>Samsung - Note 9</p>	<p>Model : 64GB - Lavender Purple</p>
+			<div style="padding-top: 20px;" class="buy" >Best buy at: 
+				<ul>
+					<li class="shops">New pasal Nepal >Price : Rs.109,900</li>
+					<li class="shops">Mero phone shop >Price : R Rs.110,000</li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="box3">
+			<h3>Product Description</h3> 
+			<article>
+				<p>
+               Do what can't be done with the new Samsung Galaxy Note9. The Galaxy Not has always put powerful technology in the hands of those who demand more. Now, the all new Galaxy NOt9 surpasses even these high expectations, focusing on what matters most in today's always-on, mobile world. Level up your mobile gaming experience. The Galaxy Note9 gives you high performance during game time with a cutting-edge processor that cuts down on lag, a water-carbon cooling system that helps prevent overheating, and an AI-based performance adjuster that ensures your game stays smooth, not sluggish. The all new S Pen now boasts powerful Bluetooth technology, letting you press a button to take control of your camera, presentations, and apps without touching your phone. While drawing, taking notes, and sending Live messages with the S Pen is as intuitive and natural as pen and paper, thanks to the fine tip and 4096 pressure levels. Experience and intelligent camera with new revolutionary features that make it nearly impossible to take a bad shot. The Galaxy Note9 intelligently recognizes what you're looking at, optimizing color setting like contrast, white balance, exposure, and more. And by detecting blinks and blurs, you can reshoot while the moments right.
+                <ul>
+                	<li>Manufacturer: Samsung</li>
+					<li>Display: 6.4 in - Super AMOLED - 2960x1440 screen resolution</li>
+					<li>Dimensions: 6.37 in (161.9 mm) x 3.00 in (76.4 mm) x 0.35 in (8.8 mm)</li>
+					<li>Product Details: 128 GB, 512 GB x microSDXC - up to 512 GB x 2.7 GHz Octa-core Qualcomm Snapdragon 845</li>
+					<li>Network: GSM/CDMA Unlocked</li>
+					<li>Bluetooth: 5.0</li>
+					<li>Video Recording: 4K @60fps</li>
+					<li>Ram: 6,8 GB</li>
+                </ul>
+				</p>
+
+			</article>
+	
+		</div>
+
+	</section>
+</div>
+
+</section>
+
+<!-- FOR S9 PLUS -->
+<section class="container">
+	<center><h4>Samsung S9 plus</h4></center>
+  	<img src="../Pictures/phones/s9plus.png" alt="Avatar" class="image"><center><input type="submit" name="" value="Buy" class="show"></center>
+  	<div class="text">
+    <div class="text" ><h3>Price: 99,900</h3></div>
+  	</div>
+  	<div class="desc" style="display: none;">
+	<section id="box">
+		<input type="button" name="" value="X" class="hide" style="float: right;">
+		<div id="box1"><p>Samsung - S9 plus</p>	<p>Model : 64GB - Coral blue</p>
+			<div style="padding-top: 20px;" class="buy" >Best buy at: 
+				<ul>
+					<li class="shops">Hamro bazar >Price : Rs.99,900.00</li>
+					<li class="shops">Daraz >Price : Rs.99,999.00</li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="box3">
+			<h3>Product Description</h3> 
+			<article>
+				<p>
+                Introducing the Samsung Galaxy S9+ - The Camera. Reimagined. Our category-defining Dual Aperture lens adapts like the human eye. It's able to automatically switch between various lighting conditions with ease?making your photos look great whether it's bright or dark, day or night. If it's dark, the lens opens to F1.5 mode to pull in light for a bright and clear photo and in the daylight, the lens shifts to F2.4 mode to help your picture come out sharp. Super Slow-mo lets you see the things you could have missed in the blink of an eye. Set the video to music or turn it into a looping GIF, and share it with a tap. Then sit back and watch the reactions roll in. Create an Augmented Reality version of yourself simply by taking a selfie. Then share your real-life feelings as emoji stickers and videos. Intelligent Scan is a new technology that combines face recognition and iris scan to make unlocking simple even in low light.
+                <ul>
+                	<li>Manufacturer: Samsung</li>
+					<li>Display: 6.2 in - Quad HD+ Super AMOLED - 2960x1440 screen resolution</li>
+					<li>Dimensions: 6.22 in (158.1 mm) x 2.90 in (73.8 mm) x 0.33 in (8.5 mm)</li>
+					<li>Product Details: 64 GB, 128 GB 256 GB x microSDXC - up to 400 GB x 2.9 GHz Octa-core Exynos 9810/2.8 GHz Octa-core Snapdragon 845</li>
+					<li>Network: GSM/CDMA Unlocked</li>
+					<li>Bluetooth: 5.0</li>
+					<li>Video Recording: 4K @60fps</li>
+					<li>Ram: 6 GB</li>
+                </ul>
+				</p>
+
+			</article>
+	
+		</div>
+
+	</section>
+</div>
+</section>
+
+<!-- 7 PLUS -->
+<section class="container">
+	<center><h4>Iphone 7 plus</h4></center>
+  	<img src="../Pictures/phones/iphone7plus.png" alt="Avatar" class="image"><center><input type="submit" name="" value="Buy" class="show"></center>
+  	<div class="text">
+    <div class="text" ><h3>Price: 105,000</h3></div>
+  	</div>
+  	<div class="desc" style="display: none;">
+	<section id="box">
+		<input type="button" name="" value="X" class="hide" style="float: right;">
+		<div id="box1"><p>Apple - Iphone 7 plus</p>	<p>Model : 32GB - Space Gray</p>
+			<div style="padding-top: 20px;" class="buy" >Best buy at: 
+				<ul>
+					<li class="shops">Hamro bazar >Price : Rs.105,000.00</li>
+					<li class="shops">Daraz >Price : Rs.107,000.00</li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="box3">
+			<h3>Product Description</h3> 
+			<article>
+				<p>
+                Apple iPhone 7 Plus smartphone was launched in September 2016. The phone comes with a 5.50-inch touchscreen display with a resolution of 1080 pixels by 1920 pixels at a PPI of 401 pixels per inch.
+
+				The Apple iPhone 7 Plus is powered by quad-core processor and it comes with 3GB of RAM. The phone packs 32GB of internal storage that cannot be expanded. As far as the cameras are concerned, the Apple iPhone 7 Plus packs a 12-megapixel primary camera on the rear and a 7-megapixel front shooter for selfies.
+
+				The Apple iPhone 7 Plus is powered by a 2900mAh non removable battery. It measures 158.20 x 77.90 x 7.30 (height x width x thickness) and weighs 188.00 grams.
+
+				The Apple iPhone 7 Plus is a single SIM (GSM) smartphone that accepts a Nano-SIM. Connectivity options include Wi-Fi, GPS, Bluetooth, 3G and 4G. Sensors on the phone include Compass/ Magnetometer, Proximity sensor, Accelerometer, Ambient light sensor, Gyroscope and Barometer.
+                <ul>
+                	<li>Manufacturer: Apple</li>
+                	<li>Display: 5.5 in - 401 ppi - 1920x1080 screen resolution</li>
+                	<li>Dimensions: 6.22 in(158.2 mm) x 3.06 in(77.9 mm) x 0.29 in(7.3 mm)</li>
+                	<li>Network: GSM/CDMA Unlocked</li>
+                	<li>Camera: 12 megapixels Dual</li>
+                	<li>Processor: Apple A10 Fusion (64bit)</li>
+                	<li>Ram: 3 GB</li>
+                </ul>
+				</p>
+
+			</article>
+	
+		</div>
+
+	</section>
+</div>
+
+</section>
+
+
+<!-- FOR 7 -->
+<section class="container">
+	<center><h4>Iphone 7</h4></center>
+  	<img src="../Pictures/phones/iphone7.png" alt="Avatar" class="image"><center><input type="submit" name="" value="Buy" class="show"></center>
+  	<div class="text">
+    <div class="text" ><h3>Price: 75,000</h3></div>
+  	</div>
+  	<div class="desc" style="display: none;">
+	<section id="box">
+		<input type="button" name="" value="X" class="hide" style="float: right;">
+		<div id="box1"><p>Apple - Iphone 7</p>	<p>Model : 64GB - Space Gray</p>
+			<div style="padding-top: 20px;" class="buy" >Best buy at: 
+				<ul>
+					<li class="shops">Dazar >Price : Rs.75,000.00</li>
+					<li class="shops">Hamro Bazar >Price : Rs.76,000.00</li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- <figure><img src="../Pictures/Phones/iphonex.png"></figure> -->
+		<div id="box3">
+			<h3>Product Description</h3> 
+			<article>
+				<p>
+                The Apple iPhone 7 smartphone was launched in September 2016. The phone comes with a 4.70-inch touchscreen display with a resolution of 750 pixels by 1334 pixels at a PPI of 326 pixels per inch.
+
+				The Apple iPhone 7 is powered by 2.34GHz quad-core processor and it comes with 2GB of RAM. The phone packs 32GB of internal storage that cannot be expanded. As far as the cameras are concerned, the Apple iPhone 7 packs a 12-megapixel (f/1.8) primary camera on the rear and a 7-megapixel front shooter for selfies.
+
+				The Apple iPhone 7 is powered by a 1960mAh non removable battery. It measures 138.30 x 67.10 x 7.10 (height x width x thickness) and weighs 138.00 grams.
+
+				The Apple iPhone 7 is a single SIM (GSM) smartphone that accepts a Nano-SIM. Connectivity options include Wi-Fi, GPS, Bluetooth, NFC, Lightning, 3G and 4G. Sensors on the phone include Fingerprint sensor, Compass/ Magnetometer, Proximity sensor, Accelerometer, Ambient light sensor, Gyroscope and Barometer.
+				<ul>
+                	<li>Manufacturer: Apple</li>
+                	<li>Display: 4.7 in - 326 ppi - 1334x750 screen resolution</li>
+                	<li>Dimensions: 5.44 in(138.3 mm) x 2.64 in(67.1 mm) x 0.28 in(7.1 mm)</li>
+                	<li>Network: GSM/CDMA Unlocked</li>
+                	<li>Camera: 12 megapixels Dual</li>
+                	<li>Processor: Apple A11 Bionic</li>
+                	<li>Ram: 2 GB</li>
+                </ul>
+				</p>
+
+			</article>
+	
+		</div>
+
+	</section>
+</div>
+
+</section>
+
+<footer >
+	<p>COPYRIGHT &copy; 2019 || ALL RIGHTS RESERVED  <button id="top" style="cursor: n-resize; background: none; background-color: inherit; color: inherit; float: right;margin-right: 20px; border:1px transparent;  " title= "Go to Top" onclick="topFunction()" >Go to Top</button></p>
+</footer>
+
+<script type="text/javascript" src="../JS/slideshow.js"></script>
+<script type="text/javascript" src="../JS/top.js"></script>
+<script type="text/javascript">
+	
+		window.onscroll = function() {
+			scroll();
+			unscroll();
+		};
+
+
+
+		var dH = document.body.offsetHeight; //document height
+		var wH = window.innerHeight; //window height
+		var sH = dH - wH; //scroll height (Check Calculation)
+		var wW = window.innerWidth; //window width
+		var lastScrollTop = 0;
+		var c = document.getElementById('Canvas1');
+		var ctx=document.getElementById("Canvas1").getContext('2d');
+
+
+		function scroll(){
+		var height=document.documentElement.scrollHeight - document.documentElement.clientHeight;
+		var st = window.pageYOffset ;
+		
+		var scrolled = (st);
+		var scrollPercent = Math.round((scrolled/sH)*100);// Check Calculation
+
+		var canvasWidth = Math.round(wW*(scrollPercent/100));
+
+		ctx.fillStyle= "white";
+		ctx.fillRect(0, 0, 500, 100);		
+	}	
+
+	function unscroll(){
+		var height=document.documentElement.scrollHeight - document.documentElement.clientHeight;
+		var st = window.pageYOffset ;
+		var sb=st*(120/100);
+		
+		var scrollPercent = Math.round((st+sb/sH)*1000);
+		var scrolled = (st);
+		// console.log(scrolled);
+		var canvasWidth = Math.round(wW*(scrollPercent/100));
+		//ctx.fillStyle="#202020";
+		ctx.fillStyle= "red";
+		ctx.fillRect(scrolled, 0, -scrolled, 100);	
+	}
+</script>
+</body>
+</html>

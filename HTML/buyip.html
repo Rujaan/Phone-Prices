@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Buy Iphones</title>
+	<link rel="stylesheet" type="text/css" href="../Style/style2.css">
+	<script type="text/javascript" src="../JS/jquery-3.3.1.min.js" ></script>
+	<script>
+		$(document).ready(function(){
+		  $(".hide").click(function(){
+		  	$('.desc').fadeOut();
+		    // $('.desc').hide();
+		  });
+		  $(".show").click(function(){
+		    // $(this).parent().siblings('.desc').show('slow')
+		    $(this).parent().siblings('.desc').fadeIn()
+		  });
+		});
+
+		$(document).ready(function(){
+			$('.comp').hide()
+		  $("#txt").click(function(){
+		    $(".comp").animate({
+     			height: 'toggle'
+    		});
+		    if($(this).hasClass('add'))
+		    	$(this).removeClass('add')
+		    else
+		    $(this).addClass('add')
+		  });
+
+		$('.shops').hide();
+		$('.buy').hover( function() {
+			$(this).find('.shops').fadeIn(300);
+		}, function() {
+			$(this).find('.shops').fadeOut(100);
+		});	
+		});
+
+
+
+</script>
+<style type="text/css">
+	
+	.add{
+		font-size: 20px;
+		font-weight: bold;
+	}
+	.desc{
+		position: fixed;
+		width: 1200px;
+		z-index: 1;
+		height: 50%;
+		top: 20%;
+		left: 10%;
+	}
+
+		#box{
+			padding: 30px 20px 20% 20px;
+			width: 70%;
+			border: 1px transparent;
+			margin-left: 200px;
+			border-radius: 15%;
+			background-color: #202020;
+			color: #BDC0C1;
+			height: 100%;
+		}
+		#box1{
+			float: left;
+			display: inline-block;
+			padding-left: 30px;
+			margin-right: 70%;
+			padding-top: 20px; 
+			width: 300px;
+		}
+		#box figure img{
+			float: left;
+			display: inline-block;
+			margin-bottom: 30px;
+			margin-top: 30px;
+		}
+
+		#box3{
+			float: right;
+			margin-top: 100px;
+			
+		}
+		#box3 h3{
+			margin-bottom: 20px;
+			border-bottom: 1px solid;
+		}
+		#box4{
+			width: 20%;
+			margin-left: 20px;
+		}
+		.buy{
+			position: absolute;
+			padding-bottom: 20px;
+		}
+</style>
+</head>
+<body>
+	<header>
+		<nav id="navig">
+				<div class="navbar">
+					<ul>
+						<li class="line"><a href="../home.html" >Home</a></li>
+						<li> <a href="buy.html" id="active">Buy</a></li>
+						<li class="line"><a href="Aboutus.html">About us</a></li>
+						<li class="line"><a href="login.html">Log in</a></li>
+						<li class="line"><a href="register.html">Register</a></li>
+					</ul>
+				</div>
+				<canvas id="Canvas1"  height="1" style="border:1px solid transparent ; width:100%;"style="padding-top: 10px;"></canvas>
+
+		</nav>
+	</header>
+<div class="slideshow-container">
+
+	<div class="mySlides fade">
+	<div class="numbertext">1 / 3</div>
+	<img src="../Pictures/Covers/pic (1).jpg" style="width: 100%">
+		<div class="text">Caption One</div>
+	</div>
+
+	<div class="mySlides fade">
+		<div class="numbertext">2 / 3</div>
+		<img src="../Pictures/Covers/pic (2).jpg" style="width:100%">
+		<div class="text">Caption Two</div>
+	</div>
+
+	<div class="mySlides fade">
+		<div class="numbertext">3 / 3</div>
+		<img src="../Pictures/Covers/pic (4).jpg" style="width:100%">
+		<div class="text">Caption Three</div>
+	</div>
+
+	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+	<span class="dot" onclick="currentSlide(1)"></span> 
+	<span class="dot" onclick="currentSlide(2)"></span> 
+	<span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+	<aside id="company">
+		<section>
+			<input type="button" name="" value="Manufacturer" id="txt">
+			<section id="side">
+			<p class="comp"><a href="buy.html">All</a></p>
+			<p class="comp"><a href="buysm.html">Samsung</a></p>
+			<p class="comp" id="active2"><a href="buyip.html">Apple</a></p>
+		</section> 
+		</section>
+	</aside>	
+	
+<!-- Phone section -->
+
+<!-- FOR X -->
+<section class="container">
+	<center><h4>Iphone X</h4></center>
+  	<img src="../Pictures/phones/iphonex.png" alt="Avatar" class="image"><center><input type="submit" name="" value="Buy" class="show"></center>
+  	<div class="text">
+    <div class="text" ><h3>Price: 146,000</h3></div>
+  	</div>
+  	<div class="desc" style="display: none;">
+	<section id="box">
+		<input type="button" name="" value="X" class="hide" style="float: right;">
+		<div id="box1"><p>Apple - Iphone X</p>	<p>Model : 64GB - Space Gray</p>
+			<div style="padding-top: 20px;" class="buy" >Best buy at: 
+				<ul>
+					<li class="shops">Hamro bazar >Price : Rs.146,000.00</li>
+					<li class="shops">New phone shop >Price : Rs.148,000.00</li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="box3">
+			<h3>Product Description</h3> 
+			<article>
+				<p>
+                Our vision has always been to create an iPhone that is entirely screen. One so immersive the device itself disappears into the experience. And so intelligent it can respond to a tap, your voice, and even a glance. With iPhone X, that vision is now a reality. Say hello to the future.
+                <ul>
+                	<li>Manufacturer: Apple</li>
+                	<li>Display: 5.8 in - 458 ppi - 2436x1125 screen resolution</li>
+                	<li>Dimensions: 5.65 in (143.6 mm) x 2.79 in (70.9 mm) x 0.30 in (7.7 mm)</li>
+                	<li>Network: GSM/CDMA Unlocked</li>
+                	<li>Camera: 12 megapixels Dual</li>
+                	<li>Processor: Apple A11 Bionic</li>
+                	<li>Ram: 3 GB</li>
+                </ul>
+				</p>
+
+			</article>
+	
+		</div>
+
+	</section>
+</div>
+
+</section>
+
+<!-- FOR XR -->
+<section class="container">
+	<center><h4>Iphone XR</h4></center>
+  	<img src="../Pictures/phones/iphonexr.png" alt="Avatar" class="image"><center><input type="submit" name="" value="Buy" class="show"></center>
+  	<div class="text">
+    <div class="text" ><h3>Price: 119,500</h3></div>
+  	</div>
+  	<div class="desc" style="display: none;">
+	<section id="box">
+		<input type="button" name="" value="X" class="hide" style="float: right;">
+		<div id="box1"><p>Apple - Iphone XR</p>	<p>Model : 64GB - Space Gray</p>
+			<div style="padding-top: 20px;" class="buy" >Best buy at: 
+				<ul>
+					<li class="shops">New pasal Nepal >Price : Rs.119,500</li>
+					<li class="shops">Mero phone shop >Price : R Rs.120,000</li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="box3">
+			<h3>Product Description</h3> 
+			<article>
+				<p>
+               Liquid Retina - Introducing the most advanced LCD in the industry. All-new Liquid Retina. Innovative engineering allows to stretch the display into the corners. The result is an all-screen design - our largest LCD ever in an iPhone - that still fits comfortably in your hand.. Resists water and dust.The most durable front glass in a smartphon helps create an enclosure that's water resistant up to 1 meter for 30 minutes. iPhone Xr even resists spills from Coffee, Tea, Soda, and more.
+                <ul>
+                	<li>Manufacturer: Apple</li>
+                	<li>Display: 6.1 in - 326 ppi - 1792x828 screen resolution</li>
+                	<li>Dimensions: 5.94 in (150.9 mm) x 2.98 in (75.7 mm) x 0.33 in (8.3 mm)</li>
+                	<li>Network: GSM/CDMA Unlocked</li>
+                	<li>Camera: 12 megapixels Dual</li>
+                	<li>Processor: Apple A12 Bionic</li>
+                	<li>Ram: 3 GB</li>
+                </ul>
+				</p>
+
+			</article>
+	
+		</div>
+
+	</section>
+</div>
+
+</section>
+
+<!-- FOR 8 PLUS -->
+<section class="container">
+	<center><h4>Iphone 8 Plus</h4></center>
+  	<img src="../Pictures/phones/iphone8plus.png" alt="Avatar" class="image"><center><input type="submit" name="" value="Buy" class="show"></center>
+  	<div class="text">
+    <div class="text" ><h3>Price: 112,500</h3></div>
+  	</div>
+  	<div class="desc" style="display: none;">
+	<section id="box">
+		<input type="button" name="" value="X" class="hide" style="float: right;">
+		<div id="box1"><p>Apple - Iphone 8 plus</p>	<p>Model : 64GB - Space Gray</p>
+			<div style="padding-top: 20px;" class="buy" >Best buy at: 
+				<ul>
+					<li class="shops">Daraz >Price : Rs.112,500.00</li>
+					<li class="shops">Phone shop lalitpur >Price : Rs.119,500.00</li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- <figure><img src="../Pictures/Phones/iphonex.png"></figure> -->
+		<div id="box3">
+			<h3>Product Description</h3> 
+			<article>
+				<p>
+                iPhone 8 Plus introduces an all_new glass design. The world's most popular camera, now even better. The smartest, most powerful chip ever in a smartphone. Wireless charging that?s truly effortless. And augmented reality experiences never before possible. iPhone 8 Plus. A new generation of iPhone.
+                <ul>
+                	<li>Manufacturer: Apple</li>
+                	<li>Display: 5.5 in - 401 ppi - 1920x1080 screen resolution</li>
+                	<li>Dimensions: 6.23 in (158.4 mm) x 3.07 in (78.1 mm) x 0.30 in (7.5 mm)</li>
+                	<li>Network: GSM/CDMA Unlocked</li>
+                	<li>Camera: 12 megapixels Dual</li>
+                	<li>Processor: Apple A11 Bionic</li>
+                	<li>Ram: 3 GB</li>
+                </ul>
+				</p>
+
+			</article>
+	
+		</div>
+
+	</section>
+</div>
+
+</section>
+
+<!-- FOR XS MAX -->
+<section class="container">
+	<center><h4>Iphone Xs Max</h4></center>
+  	<img src="../Pictures/phones/iphonexsmax.png" alt="Avatar" class="image"><center><input type="submit" name="" value="Buy" class="show"></center>
+  	<div class="text">
+    <div class="text" ><h3>Price: 115,900</h3></div>
+  	</div>
+  	<div class="desc" style="display: none;">
+	<section id="box">
+		<input type="button" name="" value="X" class="hide" style="float: right;">
+		<div id="box1"><p>Apple - Iphone Xs Max</p>	<p>Model : 64GB - Space Gray</p>
+			<div style="padding-top: 20px;" class="buy" >Best buy at: 
+				<ul>
+					<li class="shops">Hamro bazar >Price : Rs.115,900.00</li>
+					<li class="shops">Kalimati naya pasal >Price : Rs.116,900.00</li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="box3">
+			<h3>Product Description</h3> 
+			<article>
+				<p>
+                Super Retina. In Big and Bigger. An all-screen design gives you a large, beautiful canvas for everything you love to do. And iPhone Xs Max makes it massive, with a screen that measure 6.5 inches - our largest display ever on an iPhone. Custom-built OLED. The OLED panels in iPhone Xs Max allow for an HDR display with the industry's best color accuracy and remarkable brightness and contrast. They're the sharpest displays, with the highest pixel density, on any Apple device. A new level of water resistance. The A12 Bionic, with our next-generation Neural Engine, delivers incredible performance. It uses real-time machine learning to transform the way you experience photos, gaming, augmented reality, and more. Sensors, processors, algorithms, and you. An innovative dual-camera system integrates the ISP, the Neural Engine, and advanced algorithms to unlock new creative possibilities and help you capture incredible photos. Together with the Apple-designed ISP, it works like the world's fastest photographer's assistant to help turn your pictures into showstoppers. Security made simple. Face ID reinvente the way we unlock, log in, and pay. Some of our most sophisticated technologies - the TrueDepth camera system,and the Neural Engine - make it the most secure facial authentication ever in a smartphone. And even faster and easier to use.
+                <ul>
+                	<li>Manufacturer: Apple</li>
+                	<li>Display: 6.5 in - 458 ppi - 2688x1242 screen resolution</li>
+                	<li>Dimensions: 6.20 in (157.5 mm) x 3.04 in (77.4 mm) x 0.30 in (7.7 mm)</li>
+                	<li>Network: GSM/CDMA Unlocked</li>Dimensions: 6.20 in (157.5 mm) x 3.04 in (77.4 mm) x 0.30 in (7.7 mm)
+                	<li>Camera: 12 megapixels Dual</li>
+                	<li>Processor: Apple A12 Bionic</li>
+                	<li>Ram: 4 GB</li>
+                </ul>
+				</p>
+
+			</article>
+	
+		</div>
+
+	</section>
+</div>
+
+</section>
+
+<!-- 7 PLUS -->
+<section class="container">
+	<center><h4>Iphone 7 plus</h4></center>
+  	<img src="../Pictures/phones/iphone7plus.png" alt="Avatar" class="image"><center><input type="submit" name="" value="Buy" class="show"></center>
+  	<div class="text">
+    <div class="text" ><h3>Price: 105,000</h3></div>
+  	</div>
+  	<div class="desc" style="display: none;">
+	<section id="box">
+		<input type="button" name="" value="X" class="hide" style="float: right;">
+		<div id="box1"><p>Apple - Iphone 7 plus</p>	<p>Model : 32GB - Space Gray</p>
+			<div style="padding-top: 20px;" class="buy" >Best buy at: 
+				<ul>
+					<li class="shops">Hamro bazar >Price : Rs.105,000.00</li>
+					<li class="shops">Daraz >Price : Rs.107,000.00</li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="box3">
+			<h3>Product Description</h3> 
+			<article>
+				<p>
+                Apple iPhone 7 Plus smartphone was launched in September 2016. The phone comes with a 5.50-inch touchscreen display with a resolution of 1080 pixels by 1920 pixels at a PPI of 401 pixels per inch.
+
+				The Apple iPhone 7 Plus is powered by quad-core processor and it comes with 3GB of RAM. The phone packs 32GB of internal storage that cannot be expanded. As far as the cameras are concerned, the Apple iPhone 7 Plus packs a 12-megapixel primary camera on the rear and a 7-megapixel front shooter for selfies.
+
+				The Apple iPhone 7 Plus is powered by a 2900mAh non removable battery. It measures 158.20 x 77.90 x 7.30 (height x width x thickness) and weighs 188.00 grams.
+
+				The Apple iPhone 7 Plus is a single SIM (GSM) smartphone that accepts a Nano-SIM. Connectivity options include Wi-Fi, GPS, Bluetooth, 3G and 4G. Sensors on the phone include Compass/ Magnetometer, Proximity sensor, Accelerometer, Ambient light sensor, Gyroscope and Barometer.
+                <ul>
+                	<li>Manufacturer: Apple</li>
+                	<li>Display: 5.5 in - 401 ppi - 1920x1080 screen resolution</li>
+                	<li>Dimensions: 6.22 in(158.2 mm) x 3.06 in(77.9 mm) x 0.29 in(7.3 mm)</li>
+                	<li>Network: GSM/CDMA Unlocked</li>
+                	<li>Camera: 12 megapixels Dual</li>
+                	<li>Processor: Apple A10 Fusion (64bit)</li>
+                	<li>Ram: 3 GB</li>
+                </ul>
+				</p>
+
+			</article>
+	
+		</div>
+
+	</section>
+</div>
+
+</section>
+
+
+<!-- FOR 7 -->
+<section class="container">
+	<center><h4>Iphone 7</h4></center>
+  	<img src="../Pictures/phones/iphone7.png" alt="Avatar" class="image"><center><input type="submit" name="" value="Buy" class="show"></center>
+  	<div class="text">
+    <div class="text" ><h3>Price: 75,000</h3></div>
+  	</div>
+  	<div class="desc" style="display: none;">
+	<section id="box">
+		<input type="button" name="" value="X" class="hide" style="float: right;">
+		<div id="box1"><p>Apple - Iphone 7</p>	<p>Model : 64GB - Space Gray</p>
+			<div style="padding-top: 20px;" class="buy" >Best buy at: 
+				<ul>
+					<li class="shops">Dazar >Price : Rs.75,000.00</li>
+					<li class="shops">Hamro Bazar >Price : Rs.76,000.00</li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- <figure><img src="../Pictures/Phones/iphonex.png"></figure> -->
+		<div id="box3">
+			<h3>Product Description</h3> 
+			<article>
+				<p>
+                The Apple iPhone 7 smartphone was launched in September 2016. The phone comes with a 4.70-inch touchscreen display with a resolution of 750 pixels by 1334 pixels at a PPI of 326 pixels per inch.
+
+				The Apple iPhone 7 is powered by 2.34GHz quad-core processor and it comes with 2GB of RAM. The phone packs 32GB of internal storage that cannot be expanded. As far as the cameras are concerned, the Apple iPhone 7 packs a 12-megapixel (f/1.8) primary camera on the rear and a 7-megapixel front shooter for selfies.
+
+				The Apple iPhone 7 is powered by a 1960mAh non removable battery. It measures 138.30 x 67.10 x 7.10 (height x width x thickness) and weighs 138.00 grams.
+
+				The Apple iPhone 7 is a single SIM (GSM) smartphone that accepts a Nano-SIM. Connectivity options include Wi-Fi, GPS, Bluetooth, NFC, Lightning, 3G and 4G. Sensors on the phone include Fingerprint sensor, Compass/ Magnetometer, Proximity sensor, Accelerometer, Ambient light sensor, Gyroscope and Barometer.
+				<ul>
+                	<li>Manufacturer: Apple</li>
+                	<li>Display: 4.7 in - 326 ppi - 1334x750 screen resolution</li>
+                	<li>Dimensions: 5.44 in(138.3 mm) x 2.64 in(67.1 mm) x 0.28 in(7.1 mm)</li>
+                	<li>Network: GSM/CDMA Unlocked</li>
+                	<li>Camera: 12 megapixels Dual</li>
+                	<li>Processor: Apple A11 Bionic</li>
+                	<li>Ram: 2 GB</li>
+                </ul>
+				</p>
+
+			</article>
+	
+		</div>
+
+	</section>
+</div>
+
+</section>
+
+<footer >
+	<p>COPYRIGHT &copy; 2019 || ALL RIGHTS RESERVED  <button id="top" style="cursor: n-resize; background: none; background-color: inherit; color: inherit; float: right;margin-right: 20px; border:1px transparent;  " title= "Go to Top" onclick="topFunction()" >Go to Top</button></p>
+</footer>
+
+<script type="text/javascript" src="../JS/slideshow.js"></script>
+<script type="text/javascript" src="../JS/top.js"></script>
+<script type="text/javascript">
+	
+		window.onscroll = function() {
+			scroll();
+			unscroll();
+		};
+
+
+
+		var dH = document.body.offsetHeight; //document height
+		var wH = window.innerHeight; //window height
+		var sH = dH - wH; //scroll height (Check Calculation)
+		var wW = window.innerWidth; //window width
+		var lastScrollTop = 0;
+		var c = document.getElementById('Canvas1');
+		var ctx=document.getElementById("Canvas1").getContext('2d');
+
+
+		function scroll(){
+		var height=document.documentElement.scrollHeight - document.documentElement.clientHeight;
+		var st = window.pageYOffset ;
+		
+		var scrolled = (st);
+		var scrollPercent = Math.round((scrolled/sH)*100);// Check Calculation
+
+		var canvasWidth = Math.round(wW*(scrollPercent/100));
+
+		ctx.fillStyle= "white";
+		ctx.fillRect(0, 0, 500, 100);		
+	}	
+
+	function unscroll(){
+		var height=document.documentElement.scrollHeight - document.documentElement.clientHeight;
+		var st = window.pageYOffset ;
+		var sb=st*(120/100);
+		
+		var scrollPercent = Math.round((st+sb/sH)*1000);
+		var scrolled = (st);
+		// console.log(scrolled);
+		var canvasWidth = Math.round(wW*(scrollPercent/100));
+		//ctx.fillStyle="#202020";
+		ctx.fillStyle= "red";
+		ctx.fillRect(scrolled, 0, -scrolled, 100);	
+	}
+</script>
+</body>
+</html>
